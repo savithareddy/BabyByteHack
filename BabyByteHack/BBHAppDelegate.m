@@ -9,6 +9,7 @@
 #import "BBHAppDelegate.h"
 #import "BBHViewController.h"
 #import "BBHCollectionVC.h"
+#import "BBHBabyProfile.h"
 
 @implementation BBHAppDelegate
 
@@ -16,8 +17,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //    BBHViewController *viewCircle = [[BBHViewController alloc] init];
-     BBHCollectionVC *collectionVC = [[BBHCollectionVC alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
-    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:collectionVC];
+    BBHBabyProfile *babyLogin = [[BBHBabyProfile alloc] init];
+//     BBHCollectionVC *collectionVC = [[BBHCollectionVC alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
+    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:babyLogin];
     self.window.rootViewController = navVC;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

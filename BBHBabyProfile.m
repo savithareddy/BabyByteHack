@@ -9,7 +9,7 @@
 #import "BBHBabyProfile.h"
 #import "BBHCollectionVC.h"
 
-@interface BBHBabyProfile () <UITextFieldDelegate,UIPickerViewDelegate,UIPickerViewDataSource>
+@interface BBHBabyProfile () <UITextFieldDelegate>
 
 @end
 
@@ -32,14 +32,12 @@
     if (self) {
         self.view.backgroundColor = [UIColor whiteColor];
         addFrame = [[UIView alloc] initWithFrame:CGRectMake(20, 140, 280, 260)];
-//        self.addFrame.backgroundColor = [UIColor yellowColor];
+//        addFrame.backgroundColor = [UIColor yellowColor];
         [self.view addSubview:addFrame];
         
         addName = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, 260, 40)];
-        addName.backgroundColor = [UIColor colorWithWhite:0.95 alpha:0.0];
-        UIView *lineView1 = [[UIView alloc]initWithFrame:CGRectMake(10, 38, 260,2)];
-        lineView1.backgroundColor = [UIColor lightGrayColor];
-        [addFrame addSubview:lineView1];
+//        addName.backgroundColor = [UIColor colorWithWhite:0.95 alpha:0.0];
+        addName.backgroundColor = [UIColor lightGrayColor];
         addName.delegate = self;
         addName.font = [UIFont fontWithName:@"Helvetica Neue Light" size:12];
         addName.clearsOnBeginEditing = YES;
@@ -49,30 +47,36 @@
         
         UIView *metricView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
         myPickerView = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
-//        myPickerView.delegate = self;
-//        myPickerView.dataSource = self;
-//        myPickerView.showsSelectionIndicator = YES;
+        myPickerView.datePickerMode = UIDatePickerModeDate;
+        [myPickerView addTarget:self action:@selector(updateTextField:) forControlEvents:UIControlEventValueChanged];
         [metricView addSubview:myPickerView];
         
-        addDob = [[UITextField alloc] initWithFrame:CGRectMake(60, 100, 210, 40)];
-        addDob.backgroundColor = [UIColor colorWithWhite:0.95 alpha:0.0];
-        UIView *lineView4 = [[UIView alloc]initWithFrame:CGRectMake(60, 128, 210,2)];
-        lineView4.backgroundColor = [UIColor lightGrayColor];
-        [addDob addSubview:lineView4];
+        addDob = [[UITextField alloc] initWithFrame:CGRectMake(10, 60, 260, 40)];
+//        addDob.backgroundColor = [UIColor colorWithWhite:0.95 alpha:0.0];
+       addDob.backgroundColor = [UIColor lightGrayColor];
         addDob.font = [UIFont fontWithName:@"Helvetica Neue Light" size:12];
         addDob.clearsOnBeginEditing = YES;
-//        self.addMetric.delegate=self;
+        addDob.userInteractionEnabled = YES;
         addDob.inputView = myPickerView;
         [addFrame addSubview:addDob];
         
-        registerBaby = [[UIButton alloc] initWithFrame:CGRectMake(10, 150, 260, 44)];
+        UISegmentedControl *genderSelect = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@" Boy ", @" Girl ", nil]];
+        [genderSelect setFrame:CGRectMake(10, 110, 260, 40)];
+//        [genderSelect setSelectedSegmentIndex:0];
+//        [genderSelect setImage:nil forSegmentAtIndex:0];
+//        [genderSelect setTintColor:[UIColor greenColor]];
+        [genderSelect setUserInteractionEnabled:YES];
+        [genderSelect addTarget:self action:@selector(mainSegmentControl:) forControlEvents: UIControlEventValueChanged];
+        [addFrame addSubview:genderSelect];
+        
+        registerBaby = [[UIButton alloc] initWithFrame:CGRectMake(10, 160, 260, 44)];
         registerBaby.backgroundColor = [UIColor colorWithRed:0.0 green:0.7 blue:0.3 alpha:0.7];
         registerBaby.layer.cornerRadius = 5;
         [registerBaby setTitle:@"REGISTER" forState:UIControlStateNormal];
         [registerBaby addTarget:self action:@selector(openCollectionVC) forControlEvents:UIControlEventTouchUpInside];
         [addFrame addSubview:registerBaby];
         
-        cancelBaby = [[UIButton alloc] initWithFrame:CGRectMake(10, 200, 260, 44)];
+        cancelBaby = [[UIButton alloc] initWithFrame:CGRectMake(10, 210, 260, 44)];
         cancelBaby.backgroundColor = [UIColor colorWithRed:0.0 green:0.7 blue:0.3 alpha:0.7];
         cancelBaby.layer.cornerRadius = 5;
         [cancelBaby setTitle:@"CANCEL" forState:UIControlStateNormal];
@@ -90,27 +94,27 @@
     
 }
 
-//#pragma mark - Metric Picker Methods
-//- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
-//{
-//    return 1;
-//}
-//
-//
-//- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
-//{
-//    return metric.count;
-//}
-//
-//- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-//{
-//    return [metric objectAtIndex:row];
-//}
-//
-//- (void)pickerView:(UIPickerView *)pickerView didSelectRow: (NSInteger)row inComponent:(NSInteger)component {
-//   self.addMetric.text = (NSString *)[metric objectAtIndex:row];
-//}
-//
+-(void) mainSegmentControl : (UISegmentedControl *) segment
+{
+    if(segment.selectedSegmentIndex == 0)
+        {
+            NSLog(@"Boy Selected");
+        }
+        else if(segment.selectedSegmentIndex == 1)
+        {
+            NSLog(@"Girl Selected");
+        }
+}
+
+-(void) updateTextField: (UIDatePicker *)sender
+{
+    NSDate *dateSelected = [sender date];
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"dd-MM-yyyy"];
+    df.dateStyle = NSDateFormatterMediumStyle;
+    addDob.text =[df stringFromDate:dateSelected];
+}
+
 
 -(void) hideKeyboard
 {
