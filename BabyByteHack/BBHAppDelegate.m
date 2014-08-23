@@ -10,54 +10,26 @@
 #import "BBHViewController.h"
 #import "BBHCollectionVC.h"
 #import "BBHBabyProfile.h"
+#import "BBHNotificationVC.h"
+#import "BBHDataSingle.h"
 
 @implementation BBHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    BBHViewController *viewCircle = [[BBHViewController alloc] init];
-    BBHBabyProfile *babyLogin = [[BBHBabyProfile alloc] init];
+    BBHViewController *viewCircle = [[BBHViewController alloc] init];
+//    BBHBabyProfile *babyLogin = [[BBHBabyProfile alloc] init];
+//    BBHNotificationVC *notify = [[BBHNotificationVC alloc] init];
 //     BBHCollectionVC *collectionVC = [[BBHCollectionVC alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
-    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:babyLogin];
+    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:viewCircle];
     self.window.rootViewController = navVC;
     self.window.backgroundColor = [UIColor whiteColor];
+    
     [self.window makeKeyAndVisible];
     return YES;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -69,7 +41,20 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    NSLog(@"singleton value is %d",(int)[BBHDataSingle mainSingleton].randomNumSingle);
+    NSInteger count = [BBHDataSingle mainSingleton].randomNumSingle;
+    
+    
+    if (count == 1) {
+        UILocalNotification *notification = [[UILocalNotification alloc]init];
+        notification.repeatInterval = NSDayCalendarUnit;
+        [notification setAlertBody:@"Hello world -BABYBYTE at count 1"];
+        [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+        [notification setTimeZone:[NSTimeZone  defaultTimeZone]];
+        notification.soundName = UILocalNotificationDefaultSoundName;
+        [application setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+    }
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 

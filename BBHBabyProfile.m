@@ -22,6 +22,7 @@
     UIButton *registerBaby;
     UIButton *cancelBaby;
     NSArray *metric;
+    UIToolbar *toolBar;
     
 }
 
@@ -47,10 +48,31 @@
         [addFrame addSubview:addName];
         
         UIView *metricView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
-        myPickerView = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
+        myPickerView = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 40, 320, 176)];
         myPickerView.datePickerMode = UIDatePickerModeDate;
         [myPickerView addTarget:self action:@selector(updateTextField:) forControlEvents:UIControlEventValueChanged];
         [metricView addSubview:myPickerView];
+
+//        registerBaby = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];
+//        registerBaby.backgroundColor = [UIColor colorWithRed:0.0 green:0.7 blue:0.3 alpha:0.7];
+////        registerBaby.layer.cornerRadius = 5;
+//        [registerBaby setTitle:@"DONE" forState:UIControlStateNormal];
+//        [registerBaby addTarget:self action:@selector(hideKeyboard) forControlEvents:UIControlEventTouchUpInside];
+//        [metricView addSubview:registerBaby];
+//        myPickerView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin;
+        
+//        self.autoresizesSubviews = YES;
+//        self.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin;
+    
+        toolBar= [[UIToolbar alloc] initWithFrame:CGRectMake(0,0,320,40)];
+        [toolBar setBarStyle:UIBarStyleDefault];
+        toolBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        UIBarButtonItem *barButtonDone = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleBordered target:self action:@selector(hideKeyboard)];
+        UIBarButtonItem * flexible= [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+        toolBar.items = [[NSArray alloc] initWithObjects:flexible,flexible,barButtonDone,nil];
+        barButtonDone.tintColor= [UIColor blueColor];
+        [metricView addSubview:toolBar];
+
         
         addDob = [[UITextField alloc] initWithFrame:CGRectMake(10, 60, 260, 40)];
 //        addDob.backgroundColor = [UIColor colorWithWhite:0.95 alpha:0.0];
@@ -59,6 +81,7 @@
         addDob.clearsOnBeginEditing = YES;
         addDob.userInteractionEnabled = YES;
         addDob.inputView = myPickerView;
+        addDob.inputAccessoryView = toolBar;
         [addFrame addSubview:addDob];
         
         UISegmentedControl *genderSelect = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@" Boy ", @" Girl ", nil]];

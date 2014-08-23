@@ -7,6 +7,7 @@
 //
 
 #import "BBHViewCircle.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation BBHViewCircle
 
@@ -14,38 +15,65 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        CGContextRef context = UIGraphicsGetCurrentContext();
-        [self drawEllipse:context];
+
  
     }
     return self;
 }
 
--(void)drawEllipse:(CGContextRef)context{
+- (void)drawRect:(CGRect)rect
+{
     
-    CGContextSaveGState(context);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetLineWidth(context, 2.0);
+    CGContextSetStrokeColorWithColor(context,
+                                     [UIColor blueColor].CGColor);
+    CGRect rectangle1 = CGRectMake(60,170,80,80);
+    CGContextAddEllipseInRect(context, rectangle1);
+    CGContextStrokePath(context);
     
-    //Set color of current context
-    [[UIColor blackColor] set];
+    CGContextSetLineWidth(context, 4.0);
+    CGContextSetStrokeColorWithColor(context,
+                                     [UIColor orangeColor].CGColor);
+    CGRect rectangle2 = CGRectMake(55,165,90,90);
+   
+    CGContextAddEllipseInRect(context, rectangle2);
+    CGContextStrokePath(context);
     
-    //Set shadow and color of shadow
-    CGContextSetShadowWithColor(context, CGSizeZero, 10.0f, [[UIColor blackColor] CGColor]);
+    CGContextSetLineWidth(context, 2.0);
+    CGContextSetStrokeColorWithColor(context,
+                                     [UIColor blackColor].CGColor);
+    CGContextMoveToPoint(context, 100, 100);
+    CGContextAddLineToPoint(context, 150, 150);
+    CGContextAddLineToPoint(context, 100, 200);
+    CGContextAddLineToPoint(context, 50, 150);
+    CGContextFillPath(context);
+    CGContextStrokePath(context);
     
-    //Draw ellipse
-    CGRect ellipseRect = CGRectMake(60.0f, 150.0f, 200.0f, 200.0f);
-    CGContextFillEllipseInRect(context, ellipseRect);
-    
-    CGContextRestoreGState(context);
     
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

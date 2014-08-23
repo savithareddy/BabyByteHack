@@ -32,6 +32,9 @@
 		9192601F19A91346008EE0D3 /* Unknown-7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9192601719A91346008EE0D3 /* Unknown-7.jpeg */; };
 		9192602019A91346008EE0D3 /* Unknown.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9192601819A91346008EE0D3 /* Unknown.jpeg */; };
 		9192602319A91438008EE0D3 /* BBHCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9192602219A91438008EE0D3 /* BBHCell.m */; };
+		9192602619A925AC008EE0D3 /* BBHNotificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9192602519A925AC008EE0D3 /* BBHNotificationVC.m */; };
+		9192602919A931B6008EE0D3 /* BBHDataSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9192602819A931B6008EE0D3 /* BBHDataSingle.m */; };
+		9192602B19A94DCC008EE0D3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9192602A19A94DCC008EE0D3 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,11 @@
 		9192601819A91346008EE0D3 /* Unknown.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpeg; sourceTree = "<group>"; };
 		9192602119A91438008EE0D3 /* BBHCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBHCell.h; sourceTree = "<group>"; };
 		9192602219A91438008EE0D3 /* BBHCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBHCell.m; sourceTree = "<group>"; };
+		9192602419A925AC008EE0D3 /* BBHNotificationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBHNotificationVC.h; sourceTree = "<group>"; };
+		9192602519A925AC008EE0D3 /* BBHNotificationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBHNotificationVC.m; sourceTree = "<group>"; };
+		9192602719A931B6008EE0D3 /* BBHDataSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBHDataSingle.h; sourceTree = "<group>"; };
+		9192602819A931B6008EE0D3 /* BBHDataSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBHDataSingle.m; sourceTree = "<group>"; };
+		9192602A19A94DCC008EE0D3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9192602B19A94DCC008EE0D3 /* QuartzCore.framework in Frameworks */,
 				91925FD919A8FCC3008EE0D3 /* CoreGraphics.framework in Frameworks */,
 				91925FDB19A8FCC3008EE0D3 /* UIKit.framework in Frameworks */,
 				91925FD719A8FCC3008EE0D3 /* Foundation.framework in Frameworks */,
@@ -108,6 +117,10 @@
 		91925FCA19A8FCC3008EE0D3 = {
 			isa = PBXGroup;
 			children = (
+				9192602719A931B6008EE0D3 /* BBHDataSingle.h */,
+				9192602819A931B6008EE0D3 /* BBHDataSingle.m */,
+				9192602419A925AC008EE0D3 /* BBHNotificationVC.h */,
+				9192602519A925AC008EE0D3 /* BBHNotificationVC.m */,
 				9192601119A91346008EE0D3 /* Unknown-1.jpeg */,
 				9192601219A91346008EE0D3 /* Unknown-2.jpeg */,
 				9192601319A91346008EE0D3 /* Unknown-3.jpeg */,
@@ -145,6 +158,7 @@
 		91925FD519A8FCC3008EE0D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9192602A19A94DCC008EE0D3 /* QuartzCore.framework */,
 				91925FD619A8FCC3008EE0D3 /* Foundation.framework */,
 				91925FD819A8FCC3008EE0D3 /* CoreGraphics.framework */,
 				91925FDA19A8FCC3008EE0D3 /* UIKit.framework */,
@@ -299,6 +313,8 @@
 			files = (
 				91925FE319A8FCC3008EE0D3 /* main.m in Sources */,
 				9192602319A91438008EE0D3 /* BBHCell.m in Sources */,
+				9192602619A925AC008EE0D3 /* BBHNotificationVC.m in Sources */,
+				9192602919A931B6008EE0D3 /* BBHDataSingle.m in Sources */,
 				9192600D19A90902008EE0D3 /* BBHBabyProfile.m in Sources */,
 				9192601019A9092C008EE0D3 /* BBHCollectionVC.m in Sources */,
 				9192600A19A9012F008EE0D3 /* BBHViewController.m in Sources */,

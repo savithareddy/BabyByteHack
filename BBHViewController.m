@@ -8,6 +8,7 @@
 
 #import "BBHViewController.h"
 #import "BBHViewCircle.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface BBHViewController ()
 
@@ -16,6 +17,7 @@
 @implementation BBHViewController
 {
     BBHViewCircle *view;
+   
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -31,10 +33,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
 //    self.view.backgroundColor = [UIColor lightGrayColor];
-    view = [[BBHViewCircle alloc] init];
+    view = [[BBHViewCircle alloc] initWithFrame:CGRectMake(0, 0, 320, SCREEN_HEIGHT)];
+//    view.tintColor = [UIColor blackColor];
 //            WithFrame:CGRectMake(0, 0,SCREEN_WIDTH, SCREEN_HEIGHT)];
-    [self.view addSubview:view];
+    [self.view  addSubview:view];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,6 +47,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+
+
 
 /*
 #pragma mark - Navigation
