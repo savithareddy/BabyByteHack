@@ -31,6 +31,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.view.backgroundColor = [UIColor whiteColor];
+        
         addFrame = [[UIView alloc] initWithFrame:CGRectMake(20, 140, 280, 260)];
 //        addFrame.backgroundColor = [UIColor yellowColor];
         [self.view addSubview:addFrame];
@@ -75,13 +76,7 @@
         [registerBaby setTitle:@"REGISTER" forState:UIControlStateNormal];
         [registerBaby addTarget:self action:@selector(openCollectionVC) forControlEvents:UIControlEventTouchUpInside];
         [addFrame addSubview:registerBaby];
-        
-        cancelBaby = [[UIButton alloc] initWithFrame:CGRectMake(10, 210, 260, 44)];
-        cancelBaby.backgroundColor = [UIColor colorWithRed:0.0 green:0.7 blue:0.3 alpha:0.7];
-        cancelBaby.layer.cornerRadius = 5;
-        [cancelBaby setTitle:@"CANCEL" forState:UIControlStateNormal];
-        [cancelBaby addTarget:self action:@selector(openCollectionVC) forControlEvents:UIControlEventTouchUpInside];
-        [addFrame addSubview:cancelBaby];
+    
        
     }
     return self;
@@ -149,10 +144,26 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-//    [super viewDidLoad];
-    
+    self.navigationController.navigationBarHidden = YES;
+    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 30, SCREEN_WIDTH, 60)];
+//    header.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:header];
+    UILabel *headerLabelg = [[UILabel alloc] initWithFrame:CGRectMake(0,0,SCREEN_WIDTH/2,60)];
+    headerLabelg.text = @"BABY";
+    headerLabelg.font = [UIFont fontWithName:@"Savoye LET" size:40];
+    headerLabelg.textColor = [UIColor redColor];
+    headerLabelg.textAlignment = NSTextAlignmentRight;
+    [header addSubview:headerLabelg];
+    UILabel *headerLabelb = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2,0,SCREEN_WIDTH/2,60)];
+    headerLabelb.text = @"BYTE";
+    headerLabelb.font = [UIFont fontWithName:@"Savoye LET" size:40];
+    headerLabelb.textColor = [UIColor blueColor];
+    headerLabelb.textAlignment = NSTextAlignmentLeft;
+    [header addSubview:headerLabelb];
     
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
