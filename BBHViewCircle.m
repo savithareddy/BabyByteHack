@@ -40,15 +40,27 @@
     CGContextAddEllipseInRect(context, rectangle2);
     CGContextStrokePath(context);
     
-    CGContextSetLineWidth(context, 2.0);
-    CGContextSetStrokeColorWithColor(context,
-                                     [UIColor blackColor].CGColor);
-    CGContextMoveToPoint(context, 100, 100);
-    CGContextAddLineToPoint(context, 150, 150);
-    CGContextAddLineToPoint(context, 100, 200);
-    CGContextAddLineToPoint(context, 50, 150);
+//    CGContextSetLineWidth(context, 2.0);
+//    CGContextSetStrokeColorWithColor(context,
+//                                     [UIColor greenColor].CGColor);
+//    CGContextMoveToPoint(context, 100, 200);
+//     CGContextAddLineToPoint(context, 50, 150);
+//    CGContextAddLineToPoint(context, 150, 150);
+    
+    CGContextBeginPath(context);
+    CGContextMoveToPoint(context, 50.0, 280.0);
+    CGContextAddLineToPoint(context, 100.0, 220.0);
+    CGContextAddLineToPoint(context, 150.0f,280.0f);
+    CGContextSetLineWidth(context, 2);
+    
+
+    CGContextClosePath(context);
+    CGContextSetRGBFillColor(context, 0, 0, 0, 1);
     CGContextFillPath(context);
-    CGContextStrokePath(context);
+//    CGContextStrokePath(context);
+    
+   
+
     
     
 }

@@ -8,6 +8,8 @@
 
 #import "BBHCollectionVC.h"
 #import "BBHCell.h"
+#import "BBHViewController.h"
+#import "BBHDataSingle.h"
 
 @interface BBHCollectionVC () <UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
 
@@ -18,6 +20,7 @@
     NSArray *photos;
     NSArray *themeName;
     UIBarButtonItem *back;
+    
 }
 
 -(id)initWithCollectionViewLayout:(UICollectionViewFlowLayout *)layout
@@ -100,8 +103,9 @@
 {
     
      self.pageIndex = indexPath.row;
-//    viewVC = [[MMRViewController alloc] init];
-//    [self.navigationController pushViewController:viewVC animated:YES];
+    [BBHDataSingle mainSingleton].themes = themeName[indexPath.row];
+    BBHViewController  *viewVC = [[BBHViewController alloc] init];
+    [self.navigationController pushViewController:viewVC animated:NO];
 
     
 }
@@ -110,7 +114,7 @@
 {
     [super viewDidLoad];
     
-//    [self setEdgesForExtendedLayout:UIRectEdgeNone];
+
 self.automaticallyAdjustsScrollViewInsets = NO;
     
 }

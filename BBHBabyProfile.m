@@ -41,6 +41,7 @@
 //        addName.backgroundColor = [UIColor colorWithWhite:0.95 alpha:0.0];
         addName.backgroundColor = [UIColor lightGrayColor];
         addName.delegate = self;
+        addName.placeholder = @" Enter Baby Name";
         addName.font = [UIFont fontWithName:@"Helvetica Neue Light" size:12];
         addName.clearsOnBeginEditing = YES;
         addName.autocapitalizationType = UITextAutocapitalizationTypeNone;
@@ -77,6 +78,7 @@
         addDob = [[UITextField alloc] initWithFrame:CGRectMake(10, 60, 260, 40)];
 //        addDob.backgroundColor = [UIColor colorWithWhite:0.95 alpha:0.0];
        addDob.backgroundColor = [UIColor lightGrayColor];
+        addDob.placeholder = @" Enter Birth date";
         addDob.font = [UIFont fontWithName:@"Helvetica Neue Light" size:12];
         addDob.clearsOnBeginEditing = YES;
         addDob.userInteractionEnabled = YES;
@@ -109,6 +111,7 @@
 {
     BBHCollectionVC *collectionVC = [[BBHCollectionVC alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
     [self.navigationController pushViewController:collectionVC animated:YES];
+    collectionVC.navigationController.navigationBarHidden = NO;
     
 }
 

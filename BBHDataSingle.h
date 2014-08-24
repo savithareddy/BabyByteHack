@@ -13,6 +13,7 @@
 + (BBHDataSingle *) mainSingleton;
 
 @property (nonatomic) NSInteger randomNumSingle;
+@property (nonatomic) NSString  *themes;
 
 
 @end
