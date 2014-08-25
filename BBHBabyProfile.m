@@ -53,17 +53,6 @@
         myPickerView.datePickerMode = UIDatePickerModeDate;
         [myPickerView addTarget:self action:@selector(updateTextField:) forControlEvents:UIControlEventValueChanged];
         [metricView addSubview:myPickerView];
-
-//        registerBaby = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];
-//        registerBaby.backgroundColor = [UIColor colorWithRed:0.0 green:0.7 blue:0.3 alpha:0.7];
-////        registerBaby.layer.cornerRadius = 5;
-//        [registerBaby setTitle:@"DONE" forState:UIControlStateNormal];
-//        [registerBaby addTarget:self action:@selector(hideKeyboard) forControlEvents:UIControlEventTouchUpInside];
-//        [metricView addSubview:registerBaby];
-//        myPickerView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin;
-        
-//        self.autoresizesSubviews = YES;
-//        self.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin;
     
         toolBar= [[UIToolbar alloc] initWithFrame:CGRectMake(0,0,320,40)];
         [toolBar setBarStyle:UIBarStyleDefault];
@@ -171,21 +160,10 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBarHidden = YES;
-    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 30, SCREEN_WIDTH, 60)];
-//    header.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:header];
-    UILabel *headerLabelg = [[UILabel alloc] initWithFrame:CGRectMake(0,0,SCREEN_WIDTH/2,60)];
-    headerLabelg.text = @"BABY";
-    headerLabelg.font = [UIFont fontWithName:@"Savoye LET" size:40];
-    headerLabelg.textColor = [UIColor redColor];
-    headerLabelg.textAlignment = NSTextAlignmentRight;
-    [header addSubview:headerLabelg];
-    UILabel *headerLabelb = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2,0,SCREEN_WIDTH/2,60)];
-    headerLabelb.text = @"BYTE";
-    headerLabelb.font = [UIFont fontWithName:@"Savoye LET" size:40];
-    headerLabelb.textColor = [UIColor blueColor];
-    headerLabelb.textAlignment = NSTextAlignmentLeft;
-    [header addSubview:headerLabelb];
+    
+    UIImageView * logo = [[UIImageView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2-60, 30, 120, 60)];
+    [logo setImage:[UIImage imageNamed:@"title_azalea.png"]];
+    [self.view addSubview:logo];
     
 }
 

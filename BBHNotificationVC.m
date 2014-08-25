@@ -72,7 +72,7 @@
     countLabel.text=currentCount;
     }
     
-    if (counterup == 2)
+    if (counterup == 5)
     {
         UIAlertView *alertViewOne = [[UIAlertView alloc] initWithTitle:@"Goal Reached! Congrats"  message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alertViewOne show];

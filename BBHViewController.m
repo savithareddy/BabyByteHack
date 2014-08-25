@@ -27,24 +27,30 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        self.view.backgroundColor = [UIColor blackColor];
         
-        sampleText = [@{@"Shapes":@"Make shapes with fingers: Circle, Square, Triangle",
-                        @"Animals":@"Make fun animal noises: Bird, Kitten, Puppy",
-                        @"Baby":@"Point to baby's: Ears, Eyes, Nose",
-                        @"Colors":@"Find colors in the room: Blue, Red, Green",
-                        @"House":@"What's in the house: Door, Window, Floor",
-                        @"People":@"Point to a picture of: Mother, Baby, Brother/Sister",
-                        @"MealTime":@"Some foods we eat: Milk, Apple, Banana",
-                        @"BathTime":@"Whats in the bath: Bubbles, Water, Ducky",
-                        @"BedTime":@"What do we say for bedtime: Goodnight, Sleepy, Tired",
-                        } mutableCopy];
+//        sampleText = [@{@"Shapes":@"Make shapes with fingers: Circle, Square, Triangle",
+//                        @"Animals":@"Make fun animal noises: Bird, Kitten, Puppy",
+//                        @"Baby":@"Point to baby's: Ears, Eyes, Nose",
+//                        @"Colors":@"Find colors in the room: Blue, Red, Green",
+//                        @"House":@"What's in the house: Door, Window, Floor",
+//                        @"People":@"Point to a picture of: Mother, Baby, Brother/Sister",
+//                        @"MealTime":@"Some foods we eat: Milk, Apple, Banana",
+//                        @"BathTime":@"Whats in the bath: Bubbles, Water, Ducky",
+//                        @"BedTime":@"What do we say for bedtime: Goodnight, Sleepy, Tired",
+//                        } mutableCopy];
+//        
+//        textGuide = [[UILabel alloc] initWithFrame:CGRectMake(10, self.navigationController.view.frame.origin.y+40, SCREEN_WIDTH, 100)];
+//        textGuide.textColor = [UIColor orangeColor];
+//        textGuide.font = [UIFont fontWithName:@"Helvetica" size:12];
+//        textGuide.text = sampleText[[BBHDataSingle mainSingleton].themes];
+//        
+//        [self.view addSubview:textGuide];
         
-        textGuide = [[UILabel alloc] initWithFrame:CGRectMake(10, self.navigationController.view.frame.origin.y+40, SCREEN_WIDTH, 100)];
-        textGuide.textColor = [UIColor orangeColor];
-        textGuide.font = [UIFont fontWithName:@"Helvetica" size:12];
-        textGuide.text = sampleText[[BBHDataSingle mainSingleton].themes];
+        BBHViewCircle *view = [[BBHViewCircle alloc] initWithFrame:CGRectMake(0, 0, 320, 500)];
+        view.backgroundColor = [UIColor whiteColor];
+        [self.view addSubview:view];
         
-        [self.view addSubview:textGuide];
         
         
     }

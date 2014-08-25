@@ -23,18 +23,20 @@
 		9192600A19A9012F008EE0D3 /* BBHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9192600919A9012F008EE0D3 /* BBHViewController.m */; };
 		9192600D19A90902008EE0D3 /* BBHBabyProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9192600C19A90902008EE0D3 /* BBHBabyProfile.m */; };
 		9192601019A9092C008EE0D3 /* BBHCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9192600F19A9092C008EE0D3 /* BBHCollectionVC.m */; };
-		9192601919A91346008EE0D3 /* Unknown-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9192601119A91346008EE0D3 /* Unknown-1.jpeg */; };
-		9192601A19A91346008EE0D3 /* Unknown-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9192601219A91346008EE0D3 /* Unknown-2.jpeg */; };
-		9192601B19A91346008EE0D3 /* Unknown-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9192601319A91346008EE0D3 /* Unknown-3.jpeg */; };
-		9192601C19A91346008EE0D3 /* Unknown-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9192601419A91346008EE0D3 /* Unknown-4.jpeg */; };
-		9192601D19A91346008EE0D3 /* Unknown-5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9192601519A91346008EE0D3 /* Unknown-5.jpeg */; };
-		9192601E19A91346008EE0D3 /* Unknown-6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9192601619A91346008EE0D3 /* Unknown-6.jpeg */; };
-		9192601F19A91346008EE0D3 /* Unknown-7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9192601719A91346008EE0D3 /* Unknown-7.jpeg */; };
-		9192602019A91346008EE0D3 /* Unknown.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9192601819A91346008EE0D3 /* Unknown.jpeg */; };
 		9192602319A91438008EE0D3 /* BBHCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9192602219A91438008EE0D3 /* BBHCell.m */; };
 		9192602619A925AC008EE0D3 /* BBHNotificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9192602519A925AC008EE0D3 /* BBHNotificationVC.m */; };
 		9192602919A931B6008EE0D3 /* BBHDataSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9192602819A931B6008EE0D3 /* BBHDataSingle.m */; };
 		9192602B19A94DCC008EE0D3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9192602A19A94DCC008EE0D3 /* QuartzCore.framework */; };
+		9192603519A98D4E008EE0D3 /* animals.png in Resources */ = {isa = PBXBuildFile; fileRef = 9192602C19A98D4E008EE0D3 /* animals.png */; };
+		9192603619A98D4E008EE0D3 /* baby.png in Resources */ = {isa = PBXBuildFile; fileRef = 9192602D19A98D4E008EE0D3 /* baby.png */; };
+		9192603719A98D4E008EE0D3 /* bathtime.png in Resources */ = {isa = PBXBuildFile; fileRef = 9192602E19A98D4E008EE0D3 /* bathtime.png */; };
+		9192603819A98D4E008EE0D3 /* bedtime.png in Resources */ = {isa = PBXBuildFile; fileRef = 9192602F19A98D4E008EE0D3 /* bedtime.png */; };
+		9192603919A98D4E008EE0D3 /* colors.png in Resources */ = {isa = PBXBuildFile; fileRef = 9192603019A98D4E008EE0D3 /* colors.png */; };
+		9192603A19A98D4E008EE0D3 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 9192603119A98D4E008EE0D3 /* house.png */; };
+		9192603B19A98D4E008EE0D3 /* mealtime.png in Resources */ = {isa = PBXBuildFile; fileRef = 9192603219A98D4E008EE0D3 /* mealtime.png */; };
+		9192603C19A98D4E008EE0D3 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 9192603319A98D4E008EE0D3 /* people.png */; };
+		9192603D19A98D4E008EE0D3 /* shapes.png in Resources */ = {isa = PBXBuildFile; fileRef = 9192603419A98D4E008EE0D3 /* shapes.png */; };
+		9192603F19A98DB2008EE0D3 /* title_azalea.png in Resources */ = {isa = PBXBuildFile; fileRef = 9192603E19A98DB2008EE0D3 /* title_azalea.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,14 +74,6 @@
 		9192600C19A90902008EE0D3 /* BBHBabyProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBHBabyProfile.m; sourceTree = "<group>"; };
 		9192600E19A9092C008EE0D3 /* BBHCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBHCollectionVC.h; sourceTree = "<group>"; };
 		9192600F19A9092C008EE0D3 /* BBHCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBHCollectionVC.m; sourceTree = "<group>"; };
-		9192601119A91346008EE0D3 /* Unknown-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Unknown-1.jpeg"; sourceTree = "<group>"; };
-		9192601219A91346008EE0D3 /* Unknown-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Unknown-2.jpeg"; sourceTree = "<group>"; };
-		9192601319A91346008EE0D3 /* Unknown-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Unknown-3.jpeg"; sourceTree = "<group>"; };
-		9192601419A91346008EE0D3 /* Unknown-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Unknown-4.jpeg"; sourceTree = "<group>"; };
-		9192601519A91346008EE0D3 /* Unknown-5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Unknown-5.jpeg"; sourceTree = "<group>"; };
-		9192601619A91346008EE0D3 /* Unknown-6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Unknown-6.jpeg"; sourceTree = "<group>"; };
-		9192601719A91346008EE0D3 /* Unknown-7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Unknown-7.jpeg"; sourceTree = "<group>"; };
-		9192601819A91346008EE0D3 /* Unknown.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpeg; sourceTree = "<group>"; };
 		9192602119A91438008EE0D3 /* BBHCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBHCell.h; sourceTree = "<group>"; };
 		9192602219A91438008EE0D3 /* BBHCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBHCell.m; sourceTree = "<group>"; };
 		9192602419A925AC008EE0D3 /* BBHNotificationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBHNotificationVC.h; sourceTree = "<group>"; };
@@ -87,6 +81,16 @@
 		9192602719A931B6008EE0D3 /* BBHDataSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBHDataSingle.h; sourceTree = "<group>"; };
 		9192602819A931B6008EE0D3 /* BBHDataSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBHDataSingle.m; sourceTree = "<group>"; };
 		9192602A19A94DCC008EE0D3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9192602C19A98D4E008EE0D3 /* animals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animals.png; sourceTree = "<group>"; };
+		9192602D19A98D4E008EE0D3 /* baby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baby.png; sourceTree = "<group>"; };
+		9192602E19A98D4E008EE0D3 /* bathtime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bathtime.png; sourceTree = "<group>"; };
+		9192602F19A98D4E008EE0D3 /* bedtime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bedtime.png; sourceTree = "<group>"; };
+		9192603019A98D4E008EE0D3 /* colors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colors.png; sourceTree = "<group>"; };
+		9192603119A98D4E008EE0D3 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		9192603219A98D4E008EE0D3 /* mealtime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mealtime.png; sourceTree = "<group>"; };
+		9192603319A98D4E008EE0D3 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
+		9192603419A98D4E008EE0D3 /* shapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shapes.png; sourceTree = "<group>"; };
+		9192603E19A98DB2008EE0D3 /* title_azalea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_azalea.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,18 +121,10 @@
 		91925FCA19A8FCC3008EE0D3 = {
 			isa = PBXGroup;
 			children = (
+				9192604119A995A7008EE0D3 /* Extra  */,
+				9192604019A99588008EE0D3 /* Images */,
 				9192602719A931B6008EE0D3 /* BBHDataSingle.h */,
 				9192602819A931B6008EE0D3 /* BBHDataSingle.m */,
-				9192602419A925AC008EE0D3 /* BBHNotificationVC.h */,
-				9192602519A925AC008EE0D3 /* BBHNotificationVC.m */,
-				9192601119A91346008EE0D3 /* Unknown-1.jpeg */,
-				9192601219A91346008EE0D3 /* Unknown-2.jpeg */,
-				9192601319A91346008EE0D3 /* Unknown-3.jpeg */,
-				9192601419A91346008EE0D3 /* Unknown-4.jpeg */,
-				9192601519A91346008EE0D3 /* Unknown-5.jpeg */,
-				9192601619A91346008EE0D3 /* Unknown-6.jpeg */,
-				9192601719A91346008EE0D3 /* Unknown-7.jpeg */,
-				9192601819A91346008EE0D3 /* Unknown.jpeg */,
 				9192600E19A9092C008EE0D3 /* BBHCollectionVC.h */,
 				9192600F19A9092C008EE0D3 /* BBHCollectionVC.m */,
 				9192602119A91438008EE0D3 /* BBHCell.h */,
@@ -137,8 +133,6 @@
 				9192600C19A90902008EE0D3 /* BBHBabyProfile.m */,
 				9192600819A9012F008EE0D3 /* BBHViewController.h */,
 				9192600919A9012F008EE0D3 /* BBHViewController.m */,
-				9192600519A8FCEB008EE0D3 /* BBHViewCircle.h */,
-				9192600619A8FCEB008EE0D3 /* BBHViewCircle.m */,
 				91925FDC19A8FCC3008EE0D3 /* BabyByteHack */,
 				91925FF519A8FCC3008EE0D3 /* BabyByteHackTests */,
 				91925FD519A8FCC3008EE0D3 /* Frameworks */,
@@ -205,6 +199,34 @@
 				91925FF819A8FCC3008EE0D3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9192604019A99588008EE0D3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9192603E19A98DB2008EE0D3 /* title_azalea.png */,
+				9192602C19A98D4E008EE0D3 /* animals.png */,
+				9192602D19A98D4E008EE0D3 /* baby.png */,
+				9192602E19A98D4E008EE0D3 /* bathtime.png */,
+				9192602F19A98D4E008EE0D3 /* bedtime.png */,
+				9192603019A98D4E008EE0D3 /* colors.png */,
+				9192603119A98D4E008EE0D3 /* house.png */,
+				9192603219A98D4E008EE0D3 /* mealtime.png */,
+				9192603319A98D4E008EE0D3 /* people.png */,
+				9192603419A98D4E008EE0D3 /* shapes.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9192604119A995A7008EE0D3 /* Extra  */ = {
+			isa = PBXGroup;
+			children = (
+				9192600519A8FCEB008EE0D3 /* BBHViewCircle.h */,
+				9192600619A8FCEB008EE0D3 /* BBHViewCircle.m */,
+				9192602419A925AC008EE0D3 /* BBHNotificationVC.h */,
+				9192602519A925AC008EE0D3 /* BBHNotificationVC.m */,
+			);
+			name = "Extra ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,16 +305,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9192603A19A98D4E008EE0D3 /* house.png in Resources */,
+				9192603919A98D4E008EE0D3 /* colors.png in Resources */,
 				91925FE119A8FCC3008EE0D3 /* InfoPlist.strings in Resources */,
-				9192601A19A91346008EE0D3 /* Unknown-2.jpeg in Resources */,
+				9192603619A98D4E008EE0D3 /* baby.png in Resources */,
+				9192603C19A98D4E008EE0D3 /* people.png in Resources */,
+				9192603D19A98D4E008EE0D3 /* shapes.png in Resources */,
 				91925FE919A8FCC3008EE0D3 /* Images.xcassets in Resources */,
-				9192601B19A91346008EE0D3 /* Unknown-3.jpeg in Resources */,
-				9192602019A91346008EE0D3 /* Unknown.jpeg in Resources */,
-				9192601D19A91346008EE0D3 /* Unknown-5.jpeg in Resources */,
-				9192601F19A91346008EE0D3 /* Unknown-7.jpeg in Resources */,
-				9192601E19A91346008EE0D3 /* Unknown-6.jpeg in Resources */,
-				9192601919A91346008EE0D3 /* Unknown-1.jpeg in Resources */,
-				9192601C19A91346008EE0D3 /* Unknown-4.jpeg in Resources */,
+				9192603B19A98D4E008EE0D3 /* mealtime.png in Resources */,
+				9192603719A98D4E008EE0D3 /* bathtime.png in Resources */,
+				9192603819A98D4E008EE0D3 /* bedtime.png in Resources */,
+				9192603F19A98DB2008EE0D3 /* title_azalea.png in Resources */,
+				9192603519A98D4E008EE0D3 /* animals.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +466,7 @@
 				GCC_PREFIX_HEADER = "BabyByteHack/BabyByteHack-Prefix.pch";
 				INFOPLIST_FILE = "BabyByteHack/BabyByteHack-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -455,6 +480,7 @@
 				GCC_PREFIX_HEADER = "BabyByteHack/BabyByteHack-Prefix.pch";
 				INFOPLIST_FILE = "BabyByteHack/BabyByteHack-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

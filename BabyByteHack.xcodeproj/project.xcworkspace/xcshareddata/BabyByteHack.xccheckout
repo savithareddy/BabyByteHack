@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C249A96B-134B-4D0F-8D1F-9B45E6A570B8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BabyByteHack</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DF3E47F3-9D64-4688-A4E2-EDB10650B797</key>
+		<string>https://github.com/savithareddy/BabyByteHack.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BabyByteHack.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DF3E47F3-9D64-4688-A4E2-EDB10650B797</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/savithareddy/BabyByteHack.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DF3E47F3-9D64-4688-A4E2-EDB10650B797</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DF3E47F3-9D64-4688-A4E2-EDB10650B797</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BabyByteHack</string>
+		</dict>
+	</array>
+</dict>
+</plist>
