@@ -17,12 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    BBHViewController *viewCircle = [[BBHViewController alloc] init];
-//    BBHBabyProfile *babyLogin = [[BBHBabyProfile alloc] init];
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    BBHViewController *viewCircle = [[BBHViewController alloc] init];
+    BBHBabyProfile *babyLogin = [[BBHBabyProfile alloc] init];
 //    BBHNotificationVC *notify = [[BBHNotificationVC alloc] init];
 //     BBHCollectionVC *collectionVC = [[BBHCollectionVC alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
-    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:viewCircle];
+    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:babyLogin];
     self.window.rootViewController = navVC;
     self.window.backgroundColor = [UIColor whiteColor];
     
